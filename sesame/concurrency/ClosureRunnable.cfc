@@ -15,24 +15,30 @@
 */
 
 /**
- * Does the code run, and replaces the element with the given id
- * with the results
- *
- * @param path the relative URL path to hit.
- * @param replaceID the id of the element to replace.
+ * Implementation of java.util.Runnable that takes a closure and runs it. No value is returned.
  */
-function doCodeRun(path, replaceID)
+component accessors="true"
 {
-	//console.log(path);
-	//console.log(replaceID);
+	property func;
+	property args;
 
-	$.get(path, function(data)
-		{
-			//console.log(data);
+	/**
+	 * Constructor
+	 *
+	 * @func The function/closure to be called.
+	 */
+	public ClosureRunnable function init(required function func, struct args={})
+	{
+		setFunc(arguments.func);
+		setArgs(args);
+		return this;
+	}
 
-			$("#" + replaceID).html(data).fadeIn();
-
-		}
-	);
-
+	/**
+	 * Call the function.
+	 */
+	public void function run()
+	{
+		variables.func(argumentCollection=variables.args);
+	}
 }

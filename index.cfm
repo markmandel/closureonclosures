@@ -2,7 +2,7 @@
 
 <cfimport taglib="./tags" prefix="tag" />
 
-<html lang="en">
+<html lang="en" xmlns:tag="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
@@ -20,9 +20,9 @@
     <link href="css/main.css" type="text/css" rel="stylesheet" />
 	<link href="js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
+<body class="impress-not-supported">
 
-<div id="impress" class="impress-not-supported">
+<div id="impress">
 
     <div class="fallback-message">
         <p>Your browser <strong>doesn't support the features required</strong> by impress.js, so you are presented with a simplified version of this presentation.</p>
@@ -75,7 +75,72 @@
 	</div>
 
 	<div id="function-2" class="step slide" data-x="5000" data-y="7000" data-z="2500" data-rotate-y="-90">
-		<tag:code file="/examples/function.cfm" run="true" />
+		<tag:code file="/examples/function.cfm" lang="java" run="true" />
+	</div>
+
+	<div id="define-closure" class="step slide" data-x="5000" data-y="7000" data-z="3500" data-rotate-y="-90">
+		<tag:code file="/examples/defineClosure.cfm" run="true" startLine="2" lines="16" untab="1"/>
+	</div>
+
+	<div id="currying-1" class="step slide" data-x="5000" data-y="8000" data-z="1500" data-rotate-y="-90">
+		<tag:code file="/examples/currying.cfm" startLine="2" lines="22" untab="1" />
+	</div>
+	<div id="currying-2" class="step slide" data-x="5000" data-y="8000" data-z="2500" data-rotate-y="-90">
+		<tag:code file="/examples/currying.cfm" startLine="24" lines="17" untab="1" />
+	</div>
+	<div id="currying-3" class="step slide" data-x="5000" data-y="8000" data-z="3500" data-rotate-y="-90">
+		<tag:code file="/examples/currying.cfm" startLine="41" lines="16" untab="1" run="true"/>
+	</div>
+
+	<div id="looping-1" class="step slide" data-x="5000" data-y="6000" data-z="-3500" data-rotate-y="-180" data-rotate-x="90" scale="78">
+		<tag:code file="/examples/forLoop-cfloop.cfm" lang="java" run="true" />
+	</div>
+
+	<div id="looping-2" class="step slide" data-x="4000" data-y="6000" data-z="-3500" data-rotate-y="-180" data-rotate-x="90" scale="78">
+		<tag:code file="/examples/forLoop-closure.cfm" lang="java" run="true" />
+	</div>
+
+	<div id="upto-1" class="step slide" data-x="5000" data-y="6000" data-z="-2500" data-rotate-y="-180" data-rotate-x="90" scale="78">
+		<tag:code file="/examples/7-9.cfm" lang="java" run="true" />
+	</div>
+
+	<div id="repeat-1" class="step slide" data-x="5000" data-y="6000" data-z="-1500" data-rotate-y="-180" data-rotate-x="90" scale="78">
+		<tag:code file="/examples/repeat.cfm" lang="java" run="true" />
+	</div>
+
+	<div id="conversion-1" class="step slide" data-x="5000" data-y="7000" data-z="-3500" data-rotate-y="-180" scale="78">
+		<tag:code file="/examples/arrayfilter.cfm" lang="java" run="true" />
+	</div>
+
+	<div id="conversion-2" class="step slide" data-x="4000" data-y="7000" data-z="-3500" data-rotate-y="-180" scale="78">
+		<tag:code file="/examples/arrayToStruct-1.cfm" lang="java" run="true" />
+	</div>
+
+	<div id="conversion-3" class="step slide" data-x="3000" data-y="7000" data-z="-3500" data-rotate-y="-180" scale="78">
+		<tag:code file="/examples/arrayToStruct-2.cfm" lang="java" run="true" />
+	</div>
+
+	<div id="group-1" class="step slide" data-x="5000" data-y="8000" data-z="-3500" data-rotate-y="-180" scale="78">
+		<tag:code file="/examples/grouping-1.cfm" startLine="4" lines="9" untab="1" run="true" />
+	</div>
+	<div id="group-2" class="step slide" data-x="4000" data-y="8000" data-z="-3500" data-rotate-y="-180" scale="78">
+		<tag:code file="/examples/grouping-2.cfm" startLine="3" lines="5" untab="1"  run="true" />
+	</div>
+
+	<div id="visitor-1" class="step slide" data-x="6800" data-y="100" data-z="4000" data-rotate-y="-180">
+		<tag:code file="/examples/raiders/Tuskan.cfc" startLine="1" lines="23" />
+	</div>
+
+	<div id="visitor-2" class="step slide" data-x="5800" data-y="100" data-z="4000" data-rotate-y="-180">
+		<cfinclude template="examples/raiders/displayRaiders.cfm" />
+	</div>
+
+	<div id="visitor-3" class="step slide" data-x="4800" data-y="100" data-z="4000" data-rotate-y="-180">
+		<tag:code file="/examples/raiders/Tuskan.cfc" startLine="24" lines="22" untab="1"/>
+	</div>
+
+	<div id="visitor-4" class="step slide" data-x="3800" data-y="100" data-z="4000" data-rotate-y="-180">
+		<tag:code file="/examples/raiders/visitWithObject.cfm" run="true"/>
 	</div>
 
 	<div id="overview" class="step" data-x="0" data-y="0" data-scale="20">
@@ -97,7 +162,7 @@ if ("ontouchstart" in document.documentElement) {
 <script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
 <script src="js/main.js"></script>
 <script>
-	impress();
+	impress().init();
 	prettyPrint();
 </script>
 

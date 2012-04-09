@@ -3,3 +3,4 @@
 !.gitignore
 settings.xml
 *.iml
+atlassian-ide-plugin.xml

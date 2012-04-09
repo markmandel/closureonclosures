@@ -50,8 +50,10 @@ body {
     line-height: 1;
 }
 ol, ul {
-    list-style: none;
+    list-style: circle;
+	margin-left: 30px;
 }
+
 blockquote, q {
     quotes: none;
 }
@@ -117,6 +119,8 @@ button {
 	margin-top: 10px;
 	cursor: pointer;
 	border-radius: 4px;
+
+	z-index: 9999 !important;
 }
 
 button:hover {
@@ -134,16 +138,12 @@ pre, code {
 	font-weight: bold;
 }
 
-div.code-wrapper button {
-	float: right;
-}
-
 div.result {
 	clear: both;
 	padding: 2px;
 	border: 1px solid #888;
 	display: none;
-	margin-top: 80px;
+	margin-top: 15px;
 }
 
 /* enable clicking on elements 'hiding' behind body in 3D */
@@ -368,3 +368,7 @@ body     { pointer-events: none; }
     display: block;
 }
 
+/* cfdump */
+.cfdump_struct, .cfdump_array {
+	font-size: 22px !important;
+}
