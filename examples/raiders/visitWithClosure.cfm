@@ -2,7 +2,8 @@
 <cfinclude template="makeTuskanRaiders.cfm" />
 <cfscript>
 	array = [];
-	raider.visitWithClosure(function(it) { arrayAppend(array, it); });
+	raider.visitWithClosure(function(it)
+									{ arrayAppend(array, it); });
 </cfscript>
 
 <cfoutput>

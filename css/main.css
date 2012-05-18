@@ -63,6 +63,10 @@ q:before, q:after {
     content: none;
 }
 
+p {
+	padding: 10px 0;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -127,7 +131,9 @@ button:hover {
 	background-color: #dedede;
 }
 
-
+h2 {
+	font-size: 85%;
+}
 
 /* code styles */
 
@@ -171,15 +177,17 @@ body     { pointer-events: none; }
 /* fade out inactive slides */
 
 .step {
-    -webkit-transition: opacity 1s;
-    -moz-transition:    opacity 1s;
-    -ms-transition:     opacity 1s;
-    -o-transition:      opacity 1s;
-    transition:         opacity 1s;
+    -webkit-transition: opacity 1s, color 1s, text-shadow 1s;
+    -moz-transition:    opacity 1s, color 1s, text-shadow 1s;
+    -ms-transition:     opacity 1s, color 1s, text-shadow 1s;
+    -o-transition:      opacity 1s, color 1s, text-shadow 1s;
+    transition:         opacity 1s, color 1s, text-shadow 1s;
 }
 
-.step:not(.active) {
+.step:not(.active), .step:not(.active) span {
     opacity: 0.3;
+	text-shadow: 0 0 15px #000;
+	color: transparent !important;
 }
 
 /* STEP SPECIFIC STYLES */
@@ -321,6 +329,15 @@ body     { pointer-events: none; }
 #envelope {
 	background: url("../images/envelope.jpg") no-repeat;
 	background-size: 1035px 700px;
+}
+
+#questions h1, #questions h2
+{
+	font-family: Mate SC;
+}
+
+#questions p, #questions li {
+	font-size: 70%;
 }
 
 /* overview step */

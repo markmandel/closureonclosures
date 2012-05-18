@@ -34,5 +34,29 @@ function doCodeRun(path, replaceID)
 
 		}
 	);
-
 }
+
+function runActiveCode()
+{
+	$("div.active button").click();
+}
+
+//ready hander
+$(function()
+		{
+			//keyboard shortcuts
+			$(document).keypress(function(event)
+				{
+					console.log(event);
+					switch(event.keyCode)
+					{
+						case 114: //'r' - for run current slide.
+							runActiveCode();
+						break;
+						case 111: //'o' for overview
+							impress().goto("overview");
+						break;
+					}
+				});
+		});
+

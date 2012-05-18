@@ -14,3 +14,8 @@
 		#render(raider)#
 	</ol>
 </cfoutput>
+
+<cfscript>
+	//clean up, in case we want to show it again.
+	structDelete(variables, "render");
+</cfscript>

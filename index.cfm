@@ -92,38 +92,38 @@
 		<tag:code file="/examples/currying.cfm" startLine="41" lines="16" untab="1" run="true"/>
 	</div>
 
-	<div id="looping-1" class="step slide" data-x="5000" data-y="6000" data-z="-3500" data-rotate-y="-180" data-rotate-x="90" scale="78">
+	<div id="looping-1" class="step slide" data-x="5000" data-y="6000" data-z="-3500" data-rotate-y="-180" data-rotate-x="90" >
 		<tag:code file="/examples/forLoop-cfloop.cfm" lang="java" run="true" />
 	</div>
 
-	<div id="looping-2" class="step slide" data-x="4000" data-y="6000" data-z="-3500" data-rotate-y="-180" data-rotate-x="90" scale="78">
+	<div id="looping-2" class="step slide" data-x="4000" data-y="6000" data-z="-3500" data-rotate-y="-180" data-rotate-x="90" >
 		<tag:code file="/examples/forLoop-closure.cfm" lang="java" run="true" />
 	</div>
 
-	<div id="upto-1" class="step slide" data-x="5000" data-y="6000" data-z="-2500" data-rotate-y="-180" data-rotate-x="90" scale="78">
+	<div id="upto-1" class="step slide" data-x="5000" data-y="6000" data-z="-2500" data-rotate-y="-180" data-rotate-x="90" >
 		<tag:code file="/examples/7-9.cfm" lang="java" run="true" />
 	</div>
 
-	<div id="repeat-1" class="step slide" data-x="5000" data-y="6000" data-z="-1500" data-rotate-y="-180" data-rotate-x="90" scale="78">
+	<div id="repeat-1" class="step slide" data-x="5000" data-y="6000" data-z="-1500" data-rotate-y="-180" data-rotate-x="90" >
 		<tag:code file="/examples/repeat.cfm" lang="java" run="true" />
 	</div>
 
-	<div id="conversion-1" class="step slide" data-x="5000" data-y="7000" data-z="-3500" data-rotate-y="-180" scale="78">
+	<div id="conversion-1" class="step slide" data-x="5000" data-y="7000" data-z="-3500" data-rotate-y="-180" >
 		<tag:code file="/examples/arrayfilter.cfm" lang="java" run="true" />
 	</div>
 
-	<div id="conversion-2" class="step slide" data-x="4000" data-y="7000" data-z="-3500" data-rotate-y="-180" scale="78">
+	<div id="conversion-2" class="step slide" data-x="4000" data-y="7000" data-z="-3500" data-rotate-y="-180" >
 		<tag:code file="/examples/arrayToStruct-1.cfm" lang="java" run="true" />
 	</div>
 
-	<div id="conversion-3" class="step slide" data-x="3000" data-y="7000" data-z="-3500" data-rotate-y="-180" scale="78">
+	<div id="conversion-3" class="step slide" data-x="3000" data-y="7000" data-z="-3500" data-rotate-y="-180" >
 		<tag:code file="/examples/arrayToStruct-2.cfm" lang="java" run="true" />
 	</div>
 
-	<div id="group-1" class="step slide" data-x="5000" data-y="8000" data-z="-3500" data-rotate-y="-180" scale="78">
+	<div id="group-1" class="step slide" data-x="5000" data-y="8000" data-z="-3500" data-rotate-y="-180" >
 		<tag:code file="/examples/grouping-1.cfm" startLine="4" lines="9" untab="1" run="true" />
 	</div>
-	<div id="group-2" class="step slide" data-x="4000" data-y="8000" data-z="-3500" data-rotate-y="-180" scale="78">
+	<div id="group-2" class="step slide" data-x="4000" data-y="8000" data-z="-3500" data-rotate-y="-180" >
 		<tag:code file="/examples/grouping-2.cfm" startLine="3" lines="5" untab="1"  run="true" />
 	</div>
 
@@ -140,10 +140,104 @@
 	</div>
 
 	<div id="visitor-4" class="step slide" data-x="3800" data-y="100" data-z="4000" data-rotate-y="-180">
-		<tag:code file="/examples/raiders/visitWithObject.cfm" run="true"/>
+		<tag:code file="/examples/raiders/ArrayCollectVisitor.cfc"/>
 	</div>
 
-	<div id="overview" class="step" data-x="0" data-y="0" data-scale="20">
+	<div id="visitor-5" class="step slide" data-x="2800" data-y="100" data-z="4000" data-rotate-y="-180">
+		<tag:code file="/examples/raiders/visitWithObject.cfm" startLine="1" lines="10" run="true"/>
+	</div>
+
+	<div id="visitor-6" class="step slide" data-x="6800" data-y="1100" data-z="4000" data-rotate-y="-180">
+		<tag:code file="/examples/raiders/visitWithClosure.cfm" startLine="1" lines="7" run="true" />
+	</div>
+
+	<div id="visitor-7" class="step slide" data-x="5800" data-y="1100" data-z="4000" data-rotate-y="-180">
+		<p>
+			Built In Functions:
+		</p>
+		<ul>
+			<li>ArrayEach()</li>
+			<li>StructEach()</li>
+		</ul>
+	</div>
+
+	<div id="builder-1" class="step slide" data-x="-2000" data-y="-2000" data-z="0" data-rotate-y="-90">
+		<cfinclude template="examples/raiders/displayRaiders.cfm" />
+	</div>
+
+	<div id="builder-2" class="step slide" data-x="-2000" data-y="-2000" data-z="1000" data-rotate-y="-90">
+		<tag:code file="/examples/raiders/makeTuskanRaiders.cfm" startLine="2" lines="19" untab="1" />
+	</div>
+	<div id="builder-3" class="step slide" data-x="-2000" data-y="-2000" data-z="2000" data-rotate-y="-90">
+		<tag:code file="/examples/html/buildHtml.cfm" startLine="2" lines="15" untab="1" run="true" />
+	</div>
+
+	<div id="concurrency-1" class="step slide" data-x="-5000" data-y="2000" data-z="1000" data-rotate-y="-180">
+		<tag:code file="/examples/total-thread.cfm" startLine="2" lines="18" untab="1"  run="true" />
+	</div>
+
+	<div id="concurrency-2" class="step slide" data-x="-6000" data-y="2000" data-z="1000" data-rotate-y="-180">
+		<tag:code file="/examples/total-closure.cfm" startLine="3" lines="4" untab="1" run="true" />
+	</div>
+
+	<div id="concurrency-3" class="step slide" data-x="-7000" data-y="2000" data-z="1000" data-rotate-y="-180">
+	<p>
+		Other possibilities....
+	</p>
+	<ul>
+		<li>eachParallel()</li>
+		<li>collectParallel()</li>
+		<li>findParallel()</li>
+		<li>foldParallel()</li>
+		<li>minParallel()</li>
+		<li>maxParallel()</li>
+		<li>sumParallel()</li>
+		<li>splitParallel()</li>
+		<li>countParallel()</li>
+		<li>foldParallel()</li>
+		<li>map()</li>
+		<li>reduce()</li>
+	</ul>
+		
+	</div>
+
+	<div id="questions" class="step" data-x="-17000" data-y="2000" data-z="1000" data-rotate-y="-180" data-scale="7">
+		<h1>Questions & Learn More</h1>
+
+		<h2>Downloads</h2>
+		<p>
+			Presentation:<br/>
+			<a href="https://github.com/markmandel/closureonclosures">https://github.com/markmandel/closureonclosures</a><br/>
+			Sesame Library<br/>
+			<a href="https://github.com/markmandel/sesame">https://github.com/markmandel/sesame</a>
+		</p>
+
+
+		<h2>Learn More</h2>
+		<ul>
+			<li>Groovy</li>
+			<li>Ruby</li>
+			<li>Javascript</li>
+			<li>... etc ...</li>
+		</ul>
+
+
+
+		<h2>Contact Me</h2>
+		<p>
+			Blog: <a href="http://www.compoundtheory.com">http://www.compoundtheory.com</a><br/>
+			Twitter: <a href="http://www.twitter.com/Neurotic">http://www.twitter.com/Neurotic</a><br/>
+			Podcast: <a href="http://www.2ddu.com">http://www.2ddu.com</a><br/>
+
+		</p>
+
+
+	</div>
+
+
+
+
+	<div id="overview" class="step" data-x="0" data-y="0" data-scale="15">
 	</div>
 
 </div>
