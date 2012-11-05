@@ -83,14 +83,14 @@
 	</div>
 
 	<div id="currying-1" class="step slide" data-x="5000" data-y="8000" data-z="1500" data-rotate-y="-90">
-		<tag:code file="/examples/currying.cfm" startLine="2" lines="22" untab="1" />
+		<tag:code file="/examples/currying.cfm" run="true" />
 	</div>
-	<div id="currying-2" class="step slide" data-x="5000" data-y="8000" data-z="2500" data-rotate-y="-90">
+	<!---<div id="currying-2" class="step slide" data-x="5000" data-y="8000" data-z="2500" data-rotate-y="-90">
 		<tag:code file="/examples/currying.cfm" startLine="24" lines="17" untab="1" />
 	</div>
 	<div id="currying-3" class="step slide" data-x="5000" data-y="8000" data-z="3500" data-rotate-y="-90">
 		<tag:code file="/examples/currying.cfm" startLine="41" lines="16" untab="1" run="true"/>
-	</div>
+	</div>--->
 
 	<div id="looping-1" class="step slide" data-x="5000" data-y="6000" data-z="-3500" data-rotate-y="-180" data-rotate-x="90" >
 		<tag:code file="/examples/forLoop-cfloop.cfm" lang="java" run="true" />
